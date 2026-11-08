@@ -106,5 +106,5 @@ function generatePhotos() {
     result.push(photo);
   }
 
-  return result; // 
+  return result;
 }
