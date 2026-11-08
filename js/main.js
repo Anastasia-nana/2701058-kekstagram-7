@@ -97,19 +97,14 @@ function createPhoto(index, commentStartId) {
 //Генерирует массив из 25 описаний фотографий
 
 function generatePhotos() {
-  const photos = [];
+  const result = [];
   let nextCommentId = 1;
 
   for (let i = 1; i <= PHOTOS_COUNT; i += 1) {
     const photo = createPhoto(i, nextCommentId);
-    nextCommentId += photo.comments.length; // чтобы id комментариев не повторялись
-    photos.push(photo);
+    nextCommentId += photo.comments.length;
+    result.push(photo);
   }
 
-  return photos;
+  return result; // 
 }
-
-//Результат
-const photos = generatePhotos();
-
-console.log(photos);
