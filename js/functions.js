@@ -12,4 +12,5 @@ function isPalindrome(string) {
 
   return reversed === normalized;
 }
-
+isStringLengthValid('проверяемая строка', 20);
+isPalindrome('ДовОд');
